@@ -2,13 +2,14 @@
 import SMovieList from "./Skeletons/SMovieList";
 
 function MovieList({ title, map, isLoading }) {
+  console.log(isLoading);
   return (
     <div>
       <div className=" mb-14 mx-5 mt-10 flex flex-col gap-4">
         <h1 className="font-oswald text-white text-2xl ">{title}</h1>
         <ul className="flex flex-nowrap gap-4 overflow-x-scroll ">
           {map}
-          {{ isLoading } && (
+          {!isLoading && (
             <li className="p-8 flex flex-col items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

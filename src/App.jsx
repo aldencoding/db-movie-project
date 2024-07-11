@@ -4,7 +4,7 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div className="bg-primary">
+    <div className="container bg-container mx-auto ">
       <Outlet />
     </div>
   );

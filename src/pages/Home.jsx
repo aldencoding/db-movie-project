@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container bg-container mx-auto ">
+    <div className="">
       <div className="pt-5 relative overflow-hidden">
         {popularMovies
           .map((data) => (
